@@ -147,7 +147,7 @@ length(eid_diabetes_hes_healthy)
 ###############################################################################
 
 #save data frames
-write.csv(df_main,"~/XXX.csv", row.names = FALSE)
-write.csv(df_bio,"~/XXX.csv", row.names = FALSE)
-write.csv(df_genes,"~/XXX.csv", row.names = FALSE)
-write.csv(df_hes,"~/XXX.csv", row.names = FALSE)
+write.csv(df_main,"~/XXX/df_main_msm_sel.csv", row.names = FALSE)
+write.csv(df_bio,"~/XXX/df_bio_msm_sel.csv", row.names = FALSE)
+write.csv(df_genes,"~/XXX/df_genes_msm_sel.csv", row.names = FALSE)
+write.csv(df_hes,"~/XXX/df_hes_msm_sel.csv", row.names = FALSE)
