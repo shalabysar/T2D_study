@@ -20,7 +20,7 @@ library(coda)
 ###############################################################################
 ################################# GET FUNCTIONS ###############################
 ###############################################################################
-source("~/ukbb_diabetes/functions.R")
+source("~/functions.R")
 
 ###############################################################################
 ############################ GET SUMMARY BY MODEL #############################
@@ -196,7 +196,7 @@ sum_simul_pdd_v3 <- get_sum_mcmc_simul(simul_name = "V3",
              x_title  = "Simulated PD-D transition probability",
              groups_names = c("Pre-Diabetes", "T2D", "Healthy"))
 
-pdf("~/ukbb_diabetes/msm/Figures/sum_simul_pdd_v3.pdf")
+pdf("~/XXX/sum_simul_pdd_v3.pdf")
 sum_simul_pdd_v3$plot_sum
 dev.off()
 
@@ -208,7 +208,7 @@ sum_simul_pdh_v3 <- get_sum_mcmc_simul(simul_name = "V3",
                                        x_title  = "Simulated PD-H transition probability",
                                        groups_names = c("Pre-Diabetes", "T2D", "Healthy"))
 
-pdf("~/ukbb_diabetes/msm/Figures/sum_simul_pdh_v3.pdf")
+pdf("~/XXX/sum_simul_pdh_v3.pdf")
 sum_simul_pdh_v3$plot_sum
 dev.off()
 
