@@ -286,8 +286,8 @@ df_hes_dc_sel <- df_hes_dc %>%
 ##################### 5. DATA FRAMES SAVING
 #####################################################
 
-write.csv(df_main_dc_sel,"~/XXX.csv", row.names = FALSE)
-write.csv(df_bio_dc_sel,"~/XXX.csv", row.names = FALSE)
-write.csv(df_genes_dc_sel,"~/XXX.csv", row.names = FALSE)
-write.csv(df_hes_dc_sel,"~/XXX.csv", row.names = FALSE)
+write.csv(df_main_dc_sel,"~/XXX/df_main_dc_sel.csv", row.names = FALSE)
+write.csv(df_bio_dc_sel,"~/XXX/df_bio_dc_sel.csv", row.names = FALSE)
+write.csv(df_genes_dc_sel,"~/XXX/df_genes_dc_sel.csv", row.names = FALSE)
+write.csv(df_hes_dc_sel,"~/XXX/df_hes_dc_sel.csv", row.names = FALSE)
 
