@@ -31,15 +31,15 @@ library(flexclust)
 ################################### LOAD TABLES ###############################
 ###############################################################################
 
-#load tables
-setwd("~/ukbb_diabetes/diabetes_clustering")
+#load tables - XXX to be filled as required
+setwd("~/XXX")
 
-df_main_sel <- fread("~/ukbb_diabetes/data/obs_selected/df_main_dc_sel.csv")
-df_bio_sel <- fread("~/ukbb_diabetes/data/obs_selected/df_bio_dc_sel.csv")
-df_genes_sel <- fread("~/ukbb_diabetes/data/obs_selected/df_genes_dc_sel.csv")
-df_hes_sel <- fread("~/ukbb_diabetes/data/obs_selected/df_hes_dc_sel.csv")
-df_genetic_dict <- fread("~/ukbb_diabetes/data/obs_selected/genes_dict.csv")
-df_diag_dict <- fread("~/ukbb_diabetes/data/obs_selected/diag_dict.csv")
+df_main_sel <- fread("~/XXX.csv")
+df_bio_sel <- fread("~/XXX.csv")
+df_genes_sel <- fread("~/XXX.csv")
+df_hes_sel <- fread("~/XXX.csv")
+df_genetic_dict <- fread("~/XXX.csv")
+df_diag_dict <- fread("~/XXX.csv")
 
 
 df_main_sel <- as.data.frame(df_main_sel)
@@ -1142,8 +1142,8 @@ cluster_names_ordered_kmeans_3 <- c("SIDD", "SIRD", "MOD", "MARD1", "MARD2")
 
 save(kcca_kmeans_2, cluster_ordered_kmeans_2,
      cluster_names_ordered_kmeans_2,
-     file = "~/ukbb_diabetes/data/obs_selected/kmeans_2.RData")
+     file = "~/XXX/kmeans_2.RData")
 
 save(kcca_kmeans_3, cluster_ordered_kmeans_3,
      cluster_names_ordered_kmeans_3,
-     file = "~/ukbb_diabetes/data/obs_selected/kmeans_3.RData")
+     file = "~/XXX/kmeans_3.RData")
