@@ -19,12 +19,12 @@ library(pastecs)
 ################################ TABLES LOADING ###############################
 ###############################################################################
 
-#load tables
-setwd("~/ukbb_diabetes/msm/obs_selection")
+#load tables - XXX to be filled as required
+setwd("~/XXX")
 
-df_main <- fread("~/ukbb_diabetes/data/obs_selected/df_main_msm_sel.csv")
-df_bio <- fread("~/ukbb_diabetes/data/obs_selected/df_bio_msm_sel.csv")
-df_genes <- fread("~/ukbb_diabetes/data/obs_selected/df_genes_msm_sel.csv")
+df_main <- fread("~/XXX/df_main_msm_sel.csv")
+df_bio <- fread("~/XXX/df_bio_msm_sel.csv")
+df_genes <- fread("~/XXX/df_genes_msm_sel.csv")
 
 df_main <- as.data.frame(df_main)
 df_bio <- as.data.frame(df_bio)
@@ -33,7 +33,7 @@ df_genes <- as.data.frame(df_genes)
 ###############################################################################
 ################################# GET FUNCTIONS ###############################
 ###############################################################################
-source("~/ukbb_diabetes/functions.R")
+source("~/functions.R")
 
 ###############################################################################
 ############################### PATIENTS SELECTION ############################
@@ -401,7 +401,7 @@ generate_sum_stat(df_all_sel_fu %>%
 
 ##################### 4. STORE
 #####################################################
-out_dir <- "~/ukbb_diabetes/msm/MCMC_V3/Data/"
+out_dir <- "~/XXX/"
 simul_name <- "_simul_V3"
 
 save_for_mcmc(dates, out_dir, "dates", simul_name)
