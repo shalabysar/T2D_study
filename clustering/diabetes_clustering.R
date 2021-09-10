@@ -34,10 +34,10 @@ library(flexclust)
 #load tables - XXX to be filled as required
 setwd("~/XXX")
 
-df_main_sel <- fread("~/XXX.csv")
-df_bio_sel <- fread("~/XXX.csv")
-df_genes_sel <- fread("~/XXX.csv")
-df_hes_sel <- fread("~/XXX.csv")
+df_main_sel <- fread("~/XXX/df_main_dc_sel.csv")
+df_bio_sel <- fread("~/XXX/df_bio_dc_sel.csv")
+df_genes_sel <- fread("~/XXX/df_genes_dc_sel.csv")
+df_hes_sel <- fread("~/XXX/df_hes_dc_sel.csv")
 df_genetic_dict <- fread("~/XXX.csv")
 df_diag_dict <- fread("~/XXX.csv")
 
@@ -52,7 +52,7 @@ df_diag_dict <- as.data.frame(df_diag_dict)
 ###############################################################################
 ################################# GET FUNCTIONS ###############################
 ###############################################################################
-source("~/ukbb_diabetes/functions.R")
+source("~/functions.R")
 
 ###############################################################################
 ############################### BUILD DATAFRAMES ##############################
@@ -250,7 +250,7 @@ dev.off()
 
 ##################### 0. SAVE CURRENT IMAGE TO USE IN STEPWISE ALGO
 #####################################################
-save.image("~/ukbb_diabetes/diabetes_clustering/scripts_for_cluster/data_for_stepwise_210725.RData")
+save.image("~/XXX/data_for_stepwise_210725.RData")
 
 ##################### 1. FORWARD STEPWISE CLUSTERING
 #####################################################
@@ -259,8 +259,8 @@ save.image("~/ukbb_diabetes/diabetes_clustering/scripts_for_cluster/data_for_ste
 #p2 Run for k_range=c(7,10) on df_all_compl_no for var_all_compl variables
 
 ###### a. Load results from cluster run
-#load("~/ukbb_diabetes/diabetes_clustering/scripts_for_cluster/diabetes_clusters_forw_step_p1_210725.RData")
-#load("~/ukbb_diabetes/diabetes_clustering/scripts_for_cluster/diabetes_clusters_forw_step_p2_210725.RData")
+#load("~/XXX/diabetes_clusters_forw_step_p1_210725.RData")
+#load("~/XXX/diabetes_clusters_forw_step_p2_210725.RData")
 
 
 #format results
@@ -315,7 +315,7 @@ sum_step_clara_ch %>%
 # Run for k_range=c(2,10) on df_all_compl_no for var_all_compl variables
 
 ###### a. Load results from cluster run
-#load("~/ukbb_diabetes/diabetes_clustering/scripts_for_cluster/diabetes_clusters_back_step_210725.RData")
+#load("~/XXX/diabetes_clusters_back_step_210725.RData")
 
 ###### b. Format results
 
