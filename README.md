@@ -1,7 +1,7 @@
 # T2D_study
 Diabetes Mellitus Type II sub-phenotyping and trajectory
 
-## FILES DECRIPTION
+## Files description
 
 Code for the study on T2D clustering and trajectory modeling via MCMC organised as follow:
 **1. File functions**
@@ -19,7 +19,7 @@ Code for the study on T2D clustering and trajectory modeling via MCMC organised 
 - MCMC_recap.R: summary of results from MCMC procedures
 
 
-## MCMC MODELS DESCRIPTION
+## MCMC models description
 
 **MCMC_V2**
 - Model: PD -> PD/D/H
