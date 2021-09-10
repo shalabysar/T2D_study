@@ -7,7 +7,7 @@ Code for the study on T2D clustering and trajectory modeling
 **1. File functions**
 - functions.R: functions used across all files
 
-**2. Folder patients_selection **
+**2. Folder patients_selection**
 - patient_selection.R: main file processing of genes and hes data and for the pre-selection of patients for clustering and MCMC
 - msm_selection.R: additional selection steps for multi-state models
 
