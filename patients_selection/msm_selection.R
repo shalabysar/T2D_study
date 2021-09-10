@@ -16,15 +16,15 @@ library(lubridate)
 ################################ TABLES LOADING ###############################
 ###############################################################################
 
-#load tables
-setwd("~/ukbb_diabetes/data/obs_selection")
+#load tables - XXX to be filled as required
+setwd("~/XXX")
 
-df_main <- fread("~/ukbb_diabetes/data/obs_selected/df_main_msm_presel.csv")
-df_bio <- fread("~/ukbb_diabetes/data/obs_selected/df_bio_msm_presel.csv")
-df_genes <-fread("~/ukbb_diabetes/data/obs_selected/df_genes_msm_presel.csv")
-df_hes <-fread("~/ukbb_diabetes/data/obs_selected/df_hes_msm_presel.csv")
-df_genetic_dict <- fread("~/ukbb_diabetes/data/obs_selected/genes_dict.csv")
-df_diag_dict <- fread("~/ukbb_diabetes/data/obs_selected/diag_dict.csv")
+df_main <- fread("~/XXX.csv")
+df_bio <- fread("~/XXX.csv")
+df_genes <-fread("~/XXX.csv")
+df_hes <-fread("~/XXX.csv")
+df_genetic_dict <- fread("~/XXX.csv")
+df_diag_dict <- fread("~/XXX.csv")
 
 df_main <- as.data.frame(df_main)
 df_bio <- as.data.frame(df_bio)
@@ -36,7 +36,7 @@ df_diag_dict <- as.data.frame(df_diag_dict)
 ###############################################################################
 ################################# GET FUNCTIONS ###############################
 ###############################################################################
-source("~/ukbb_diabetes/functions.R")
+source("~/functions.R")
 
 
 ###############################################################################
@@ -147,7 +147,7 @@ length(eid_diabetes_hes_healthy)
 ###############################################################################
 
 #save data frames
-write.csv(df_main,"~/ukbb_diabetes/data/obs_selected/df_main_msm_sel.csv", row.names = FALSE)
-write.csv(df_bio,"~/ukbb_diabetes/data/obs_selected/df_bio_msm_sel.csv", row.names = FALSE)
-write.csv(df_genes,"~/ukbb_diabetes/data/obs_selected/df_genes_msm_sel.csv", row.names = FALSE)
-write.csv(df_hes,"~/ukbb_diabetes/data/obs_selected/df_hes_msm_sel.csv", row.names = FALSE)
+write.csv(df_main,"~/XXX.csv", row.names = FALSE)
+write.csv(df_bio,"~/XXX.csv", row.names = FALSE)
+write.csv(df_genes,"~/XXX.csv", row.names = FALSE)
+write.csv(df_hes,"~/XXX.csv", row.names = FALSE)
