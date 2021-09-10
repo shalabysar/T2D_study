@@ -2107,7 +2107,8 @@ scale_matrix <- function(data_matrix){
 
 #################### 37. GET MCMC MODEL SUMMARY
 #####################################################
-
+#path to be updated as required
+                                             
 get_sum_mcmc <- function(simul_name, simul_seed, seed, n_iter, BI){
   #simul_name is the name of the simul
   #simul_seed is the seed of the simul
@@ -2182,7 +2183,8 @@ get_bic_mcmc <- function(sum_model, stat_to_use, n_obs){
 
 #################### 39. GET MCMC CHAINS
 #####################################################
-
+#path to be updated as required
+                                             
 get_mcmc_chains <- function(simul_name, simul_seed, seed, n_iter, BI){
   #simul_name is the name of the simul
   #simul_seed is the seed of the simul
@@ -2221,7 +2223,8 @@ get_mcmc_chains <- function(simul_name, simul_seed, seed, n_iter, BI){
 
 #################### 40. GET MCMC SUMMARY CLUSTER
 #####################################################
-
+#path to be updated as required
+                                             
 get_mcmc_sum_cluster <- function(simul_name, simul_seed, seed, n_iter, BI,
                                    cluster_names_ordered){
   #simul_name is the name of the simul
@@ -2291,7 +2294,8 @@ get_mcmc_sum_cluster <- function(simul_name, simul_seed, seed, n_iter, BI,
 
 #################### 41. GET MCMC SIMULATON SUMMARY
 #####################################################
-
+#path to be updated as required
+                                             
 get_sum_mcmc_simul <- function(simul_name, simul_seed, seed, n_simul,
                                col_proba, x_title, groups_names){
   #simul_name is the name of the simul
@@ -2351,7 +2355,8 @@ get_sum_mcmc_simul <- function(simul_name, simul_seed, seed, n_simul,
 
 #################### 42. GET MCMC SIMULATON CLUSTER
 #####################################################
-
+#path to be updated as required
+                                             
 get_sum_mcmc_cluster <- function(simul_name, simul_seed, seed, n_simul,
                                  clusters_names){
   #simul_name is the name of the simul
