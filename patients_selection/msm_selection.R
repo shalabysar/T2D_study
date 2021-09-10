@@ -19,10 +19,10 @@ library(lubridate)
 #load tables - XXX to be filled as required
 setwd("~/XXX")
 
-df_main <- fread("~/XXX.csv")
-df_bio <- fread("~/XXX.csv")
-df_genes <-fread("~/XXX.csv")
-df_hes <-fread("~/XXX.csv")
+df_main <- fread("~/XXX/df_main_msm_presel.csv")
+df_bio <- fread("~/XXX/df_bio_msm_presel.csv")
+df_genes <-fread("~/XXX/df_genes_msm_presel.csv")
+df_hes <-fread("~/XXX/df_hes_msm_presel.csv")
 df_genetic_dict <- fread("~/XXX.csv")
 df_diag_dict <- fread("~/XXX.csv")
 
