@@ -20,13 +20,13 @@ library(flexclust)
 ################################ TABLES LOADING ###############################
 ###############################################################################
 
-#load tables
-setwd("~/ukbb_diabetes/msm/obs_selection")
+#load tables - XXX to be filled as required
+setwd("~/XXX")
 
-df_main <- fread("~/ukbb_diabetes/data/obs_selected/df_main_msm_sel.csv")
-df_bio <- fread("~/ukbb_diabetes/data/obs_selected/df_bio_msm_sel.csv")
-df_genes <- fread("~/ukbb_diabetes/data/obs_selected/df_genes_msm_sel.csv")
-df_hes <- fread("~/ukbb_diabetes/data/obs_selected/df_hes_msm_sel.csv")
+df_main <- fread("~/XXX/df_main_msm_sel.csv")
+df_bio <- fread("~/XXX/df_bio_msm_sel.csv")
+df_genes <- fread("~/XXX/df_genes_msm_sel.csv")
+df_hes <- fread("~/XXX/df_hes_msm_sel.csv")
 
 df_main <- as.data.frame(df_main)
 df_bio <- as.data.frame(df_bio)
@@ -34,7 +34,7 @@ df_genes <- as.data.frame(df_genes)
 df_hes <- as.data.frame(df_hes)
 
 #load model
-load("~/ukbb_diabetes/data/obs_selected/kmeans_2.RData")
+load("~/XXX/kmeans_2.RData")
 
 kcca_model <- kcca_kmeans_2
 cluster_names_ordered <- cluster_names_ordered_kmeans_2
@@ -44,7 +44,7 @@ cluster_ordered <- cluster_ordered_kmeans_2
 ###############################################################################
 ################################# GET FUNCTIONS ###############################
 ###############################################################################
-source("~/ukbb_diabetes/functions.R")
+source("~/functions.R")
 
 ###############################################################################
 ############################### PATIENTS SELECTION ############################
@@ -521,7 +521,7 @@ clusters <- data.frame(cluster_init, cluster_fu)
 
 ##################### 5. STORE
 #####################################################
-out_dir <- "~/ukbb_diabetes/msm/MCMC_V5/Data/"
+out_dir <- "~/XXX/"
 simul_name <- "_simul_V5"
 
 save_for_mcmc(dates, out_dir, "dates", simul_name)
