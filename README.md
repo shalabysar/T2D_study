@@ -8,7 +8,7 @@ Code for the study on T2D clustering and trajectory modeling
 - functions.R: functions used across all files
 
 **2. Folder patients_selection**
-- patient_selection.R: main file processing of genes and hes data and for the pre-selection of patients for clustering and MCMC
+- patient_selection.R: main file for the processing of genes data and hes data and for the pre-selection of patients for clustering and MCMC
 - msm_selection.R: additional selection steps for multi-state models
 
 **3. Folder clustering**
@@ -33,7 +33,7 @@ Code for the study on T2D clustering and trajectory modeling
 - Mathematical model: PD -> PD/(D+H) -> D/H
 - Variables: All but LDL and DBP
 - Scaling: Yes
-- Parameters: 1 + 8 (only mu for first transition, all selected variables for second)
+- Parameters: 1 + 8 (only baseline for first transition, all selected variables for second)
 
 **MCMC_V4**
 - Model: PD -> PD/D/H
@@ -47,11 +47,11 @@ Code for the study on T2D clustering and trajectory modeling
 - Mathematical model: D/CVD
 - Variables: Cluster membership based on T2D clusters from Clustering Model 2
 - Scaling: Yes
-- Parameters: 4
+- Parameters: 4 (treatment coding for cluster membership)
 
 **MCMC_V6**
 - Model: D -> D/CVD
 - Mathematical model: D/CVD
 - Variables: Cluster membership based on T2D clusters from Clustering Model 3
 - Scaling: Yes
-- Parameters: 5
+- Parameters: 5 (treatment coding for cluster membership)
