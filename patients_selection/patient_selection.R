@@ -16,18 +16,18 @@ library(naniar)
 ################################ TABLES LOADING ###############################
 ###############################################################################
 
-#load tables
-setwd("~/ukbb_diabetes/data/obs_selection")
+#load tables - XXX to be filled as required
+setwd("~/XXX")
 
-df <- fread("~/ukbb_diabetes/data/raw/ukb26390.csv")
-df_diag <- fread("~/ukbb_diabetes/data/raw/hesin_diag.txt")
-df_bio <- fread("~/ukbb_diabetes/data/raw/ukb27725.csv")
-df_genetic <- readRDS("~/ukbb_diabetes/data/raw/genetic_data_extracted.rds")
-df_genetic_dict <- fread("~/ukbb_diabetes/data/obs_selected/genes_dict.csv")
-df_hes_main <- fread("~/ukbb_diabetes/data/raw/hesin.txt")
-df_hes_diag <- fread("~/ukbb_diabetes/data/raw/hesin_diag.txt")
-df_death_main <- fread("~/ukbb_diabetes/data/raw/death.txt")
-df_death_cause <- fread("~/ukbb_diabetes/data/raw/death_cause.txt")
+df <- fread("~/XXX.csv")
+df_diag <- fread("~/XXX.txt")
+df_bio <- fread("~/XXX.csv")
+df_genetic <- readRDS("~/XXX.rds")
+df_genetic_dict <- fread("~/XXX.csv")
+df_hes_main <- fread("~/XXX.txt")
+df_hes_diag <- fread("~/XXX.txt")
+df_death_main <- fread("~/XXX.txt")
+df_death_cause <- fread("~/XXX.txt")
 
 
 df <- as.data.frame(df)
@@ -49,7 +49,7 @@ df_genetic <- df_genetic %>%
 ###############################################################################
 ################################# GET FUNCTIONS ###############################
 ###############################################################################
-source("~/ukbb_diabetes/functions.R")
+source("~/functions.R")
 
 ###############################################################################
 ############################# GENES DATA PROCESSING ###########################
@@ -198,10 +198,10 @@ df_hes_msm <- df_hes %>%
 #####################################################
 
 #save dataframes
-write.csv(df_msm,"~/ukbb_diabetes/data/obs_selected/df_main_msm_presel.csv", row.names = FALSE)
-write.csv(df_bio_msm,"~/ukbb_diabetes/data/obs_selected/df_bio_msm_presel.csv", row.names = FALSE)
-write.csv(df_genes_msm,"~/ukbb_diabetes/data/obs_selected/df_genes_msm_presel.csv", row.names = FALSE)
-write.csv(df_hes_msm,"~/ukbb_diabetes/data/obs_selected/df_hes_msm_presel.csv", row.names = FALSE)
+write.csv(df_msm,"~/XXX.csv", row.names = FALSE)
+write.csv(df_bio_msm,"~/XXX.csv", row.names = FALSE)
+write.csv(df_genes_msm,"~/XXX.csv", row.names = FALSE)
+write.csv(df_hes_msm,"~/XXX.csv", row.names = FALSE)
 
 ###############################################################################
 ############################### DIABETES CLUSTERING ###########################
@@ -286,8 +286,8 @@ df_hes_dc_sel <- df_hes_dc %>%
 ##################### 5. DATA FRAMES SAVING
 #####################################################
 
-write.csv(df_main_dc_sel,"~/ukbb_diabetes/data/obs_selected/df_main_dc_sel.csv", row.names = FALSE)
-write.csv(df_bio_dc_sel,"~/ukbb_diabetes/data/obs_selected/df_bio_dc_sel.csv", row.names = FALSE)
-write.csv(df_genes_dc_sel,"~/ukbb_diabetes/data/obs_selected/df_genes_dc_sel.csv", row.names = FALSE)
-write.csv(df_hes_dc_sel,"~/ukbb_diabetes/data/obs_selected/df_hes_dc_sel.csv", row.names = FALSE)
+write.csv(df_main_dc_sel,"~/XXX.csv", row.names = FALSE)
+write.csv(df_bio_dc_sel,"~/XXX.csv", row.names = FALSE)
+write.csv(df_genes_dc_sel,"~/XXX.csv", row.names = FALSE)
+write.csv(df_hes_dc_sel,"~/XXX.csv", row.names = FALSE)
 
